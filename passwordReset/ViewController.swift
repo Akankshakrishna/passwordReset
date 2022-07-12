@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstRule: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        firstRule.text = .bullet + "Buy oranges"
     }
-
-
 }
+extension String {
+    static var bullet: String {
+        return "• "
+    }
+}
+
 
