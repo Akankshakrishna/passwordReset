@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var first: UIImageView!
     @IBOutlet weak var second: UIImageView!
     @IBOutlet weak var third: UIImageView!
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
     }
    
     @IBAction func textChanged(_ sender: UITextField) {
-        notSatisfied = utilities.getMissingValidation(newPassword: password.text!)
+        notSatisfied = utilities.getMissingValidation(newPassword: password.text ?? "")
         first.image = notSatisfied[0] ? utilities.changeToCheckmark() : utilities.changeToCircle()
         second.image = notSatisfied[1] ? utilities.changeToCheckmark() : utilities.changeToCircle()
         third.image = notSatisfied[2] ? utilities.changeToCheckmark() : utilities.changeToCircle()

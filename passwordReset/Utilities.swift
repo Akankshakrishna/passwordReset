@@ -28,11 +28,11 @@ class Utilities {
         return errors
     }
     func changeToCheckmark() -> UIImage? {
-        let image1 = UIImage(systemName: "checkmark")?.withTintColor(.systemGreen)
+        let image1 = UIImage(named: "check")?.withTintColor(.green, renderingMode: .alwaysOriginal)
         return image1
     }
     func changeToCircle() -> UIImage? {
-        let image1 = UIImage(systemName: "circle.fill")?.withTintColor(.systemGray)
+        let image1 = UIImage(named: "circle")?.withTintColor(.systemGray, renderingMode: .alwaysOriginal)
         return image1
     }
 }
