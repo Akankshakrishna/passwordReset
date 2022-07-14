@@ -16,24 +16,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourth: UIImageView!
     @IBOutlet weak var fifth: UIImageView!
     let utilities = Utilities()
-    var notSatisfied = [Bool]()
+    var allImages = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        first.image = utilities.changeToCircle()
-        second.image = utilities.changeToCircle()
-        third.image = utilities.changeToCircle()
-        fourth.image = utilities.changeToCircle()
-        fifth.image = utilities.changeToCircle()
-        
     }
-   
     @IBAction func textChanged(_ sender: UITextField) {
-        notSatisfied = utilities.getMissingValidation(newPassword: password.text ?? "")
-        first.image = notSatisfied[0] ? utilities.changeToCheckmark() : utilities.changeToCircle()
-        second.image = notSatisfied[1] ? utilities.changeToCheckmark() : utilities.changeToCircle()
-        third.image = notSatisfied[2] ? utilities.changeToCheckmark() : utilities.changeToCircle()
-        fourth.image = notSatisfied[3] ? utilities.changeToCheckmark() : utilities.changeToCircle()
-        fifth.image = notSatisfied[4] ? utilities.changeToCheckmark() : utilities.changeToCircle()
+        allImages = utilities.getMissingValidation(newPassword: sender.text ?? "")!
+        first.image = allImages[0]
+        second.image = allImages[1]
+        third.image = allImages[2]
+        fourth.image = allImages[3]
+        fifth.image = allImages[4]
     }
 }
 

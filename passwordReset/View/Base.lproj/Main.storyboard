@@ -74,9 +74,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-5t-0mR">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qSp-Hs-372">
-                                                <rect key="frame" x="0.0" y="0.0" width="9" height="18"/>
-                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qSp-Hs-372">
+                                                <rect key="frame" x="0.0" y="0.5" width="9" height="17"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="9" id="4Jk-XI-RM6"/>
                                                 </constraints>
@@ -100,9 +100,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-Ag-YeL">
                                         <rect key="frame" x="0.0" y="25" width="374" height="18"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0zD-Dm-ZWF">
-                                                <rect key="frame" x="0.0" y="0.0" width="9" height="18"/>
-                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0zD-Dm-ZWF">
+                                                <rect key="frame" x="0.0" y="0.5" width="9" height="17"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="9" id="DDR-KH-I2Z"/>
                                                 </constraints>
@@ -127,9 +127,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eWP-Bc-nBo">
                                         <rect key="frame" x="0.0" y="50" width="374" height="18"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PRL-Lo-c93">
-                                                <rect key="frame" x="0.0" y="0.0" width="9" height="18"/>
-                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PRL-Lo-c93">
+                                                <rect key="frame" x="0.0" y="0.5" width="9" height="17"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="9" id="LtA-r0-0Yc"/>
                                                 </constraints>
@@ -153,9 +153,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c7o-vC-cdk">
                                         <rect key="frame" x="0.0" y="75" width="374" height="18"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fS-1B-ipa">
-                                                <rect key="frame" x="0.0" y="0.0" width="9" height="18"/>
-                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9fS-1B-ipa">
+                                                <rect key="frame" x="0.0" y="0.5" width="9" height="17"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="9" id="p3F-s5-fh6"/>
                                                 </constraints>
@@ -182,9 +182,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p71-PO-hDJ">
                                         <rect key="frame" x="0.0" y="100" width="374" height="18"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-FP-QBU">
-                                                <rect key="frame" x="0.0" y="0.0" width="9" height="18"/>
-                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-FP-QBU">
+                                                <rect key="frame" x="0.0" y="0.5" width="9" height="17"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="9" id="9Ok-K0-QAo"/>
                                                 </constraints>
@@ -263,6 +263,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="combinedShape" width="414" height="228"/>
         <image name="finalLogo" width="273" height="80"/>
         <systemColor name="systemBackgroundColor">
@@ -270,9 +271,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

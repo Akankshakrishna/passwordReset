@@ -8,24 +8,14 @@
 import Foundation
 import UIKit
 class Utilities {
-    func getMissingValidation(newPassword: String) -> [Bool] {
-        var errors: [Bool] = [false,false,false,false,false]
-        if(NSPredicate(format:"SELF MATCHES %@", ".*[0-9]+.*").evaluate(with: newPassword)){
-            errors[0] = true
-        }
-        if(NSPredicate(format:"SELF MATCHES %@", ".*[a-z]+.*").evaluate(with: newPassword)){
-            errors[1] = true
-        }
-        if(NSPredicate(format:"SELF MATCHES %@", ".*[A-Z]+.*").evaluate(with: newPassword)){
-            errors[2] = true
-        }
-        if(NSPredicate(format:"SELF MATCHES %@", ".*[!&^%$#@()/]+.*").evaluate(with: newPassword)){
-            errors[3] = true
-        }
-        if(newPassword.count >= 8 && newPassword.count <= 16){
-            errors[4] = true
-        }
-        return errors
+    var images = [#imageLiteral(resourceName: "circle"), #imageLiteral(resourceName: "circle"), #imageLiteral(resourceName: "circle"), #imageLiteral(resourceName: "circle"), #imageLiteral(resourceName: "circle")]
+    func getMissingValidation(newPassword: String) -> [UIImage]? {
+        images[0] = (NSPredicate(format:"SELF MATCHES %@", ".*[0-9]+.*").evaluate(with: newPassword) ? changeToCheckmark() : changeToCircle())!
+        images[1] = (NSPredicate(format:"SELF MATCHES %@", ".*[a-z]+.*").evaluate(with: newPassword) ? changeToCheckmark() : changeToCircle())!
+        images[2] = (NSPredicate(format:"SELF MATCHES %@", ".*[A-Z]+.*").evaluate(with: newPassword) ? changeToCheckmark() : changeToCircle())!
+        images[3] = (NSPredicate(format:"SELF MATCHES %@", ".*[!&^%$#@()/]+.*").evaluate(with: newPassword) ? changeToCheckmark() : changeToCircle())!
+        images[4] = (newPassword.count >= 8 && newPassword.count <= 16 ? changeToCheckmark() : changeToCircle())!
+        return images
     }
     func changeToCheckmark() -> UIImage? {
         let image1 = UIImage(named: "check")?.withTintColor(.green, renderingMode: .alwaysOriginal)
