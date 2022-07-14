@@ -10,23 +10,23 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
-    @IBOutlet weak var first: UIImageView!
-    @IBOutlet weak var second: UIImageView!
-    @IBOutlet weak var third: UIImageView!
-    @IBOutlet weak var fourth: UIImageView!
-    @IBOutlet weak var fifth: UIImageView!
+    @IBOutlet weak var first: UILabel!
+    @IBOutlet weak var second: UILabel!
+    @IBOutlet weak var third: UILabel!
+    @IBOutlet weak var fourth: UILabel!
+    @IBOutlet weak var fifth: UILabel!
     let utilities = Utilities()
-    var allImages = [UIImage]()
+    var allImages = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func textChanged(_ sender: UITextField) {
-        allImages = utilities.getMissingValidation(newPassword: sender.text ?? "")!
-        first.image = allImages[0]
-        second.image = allImages[1]
-        third.image = allImages[2]
-        fourth.image = allImages[3]
-        fifth.image = allImages[4]
+        allImages = utilities.getMissingValidation(newPassword: sender.text ?? "")
+        first.text = allImages[0]
+        second.text = allImages[1]
+        third.text = allImages[2]
+        fourth.text = allImages[3]
+        fifth.text = allImages[4]
     }
 }
 
