@@ -18,11 +18,12 @@ class Utilities {
         return images
     }
     func changeToCheckmark() -> UIImage? {
-        let image1 = UIImage(named: "check")?.withTintColor(.green, renderingMode: .alwaysOriginal)
+        let configuration = UIImage.SymbolConfiguration(weight: .heavy)
+        let image1 = UIImage(systemName: "checkmark", withConfiguration: configuration)?.withTintColor(.systemGreen, renderingMode: .alwaysOriginal)
         return image1
     }
     func changeToCircle() -> UIImage? {
-        let image1 = UIImage(named: "circle")?.withTintColor(.systemGray, renderingMode: .alwaysOriginal)
+        let image1 = UIImage(systemName: "circle.fill")?.withTintColor(.systemGray, renderingMode: .alwaysOriginal)
         return image1
     }
 }
